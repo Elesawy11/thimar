@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:thimar/core/routing/app_router.dart';
 import 'package:thimar/generated/l10n.dart';
 
 class ThimarBody extends StatelessWidget {
@@ -12,7 +13,7 @@ class ThimarBody extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: MaterialApp(
+      child: MaterialApp.router(
         locale: const Locale('ar'),
         localizationsDelegates: const [
           S.delegate,
@@ -22,7 +23,8 @@ class ThimarBody extends StatelessWidget {
         ],
         supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
-        home: const Scaffold(),
+        theme: ThemeData(fontFamily: 'Tajawal'),
+        routerConfig: AppRouter.router,
       ),
     );
   }
