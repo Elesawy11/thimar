@@ -46,35 +46,36 @@ class AppTextFormField extends StatelessWidget {
       controller: controller,
       maxLines: maxLines,
       decoration: InputDecoration(
-          isDense: true,
-          contentPadding: contentPadding ??
-              EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
-          focusedBorder: focusedBorder ??
-              outLineBorder(
-                color: ColorManager.mainGreen,
-              ),
-          enabledBorder: enabledBorder ??
-              outLineBorder(
-                color: ColorManager.grayED,
-              ),
-          errorBorder: outLineBorder(
-            color: Colors.red,
-          ),
-          focusedErrorBorder: outLineBorder(
-            color: Colors.red,
-          ),
-          hintStyle: hintStyle ??
-              Styles.font15Regular.copyWith(
-                color: ColorManager.greyB1,
-              ),
-          hintText: hintText,
-          suffixIcon: suffixIcon,
-          fillColor: backgroundColor ?? ColorManager.grayFD,
-          filled: true,
-          prefixIcon: prefixIcon),
+        isDense: true,
+        contentPadding: contentPadding ??
+            EdgeInsets.symmetric(horizontal: 20.w, vertical: 18.h),
+        focusedBorder: focusedBorder ??
+            outLineBorder(
+              color: ColorManager.green4c,
+            ),
+        enabledBorder: enabledBorder ??
+            outLineBorder(
+              color: ColorManager.greyF3,
+            ),
+        errorBorder: outLineBorder(
+          color: Colors.red,
+        ),
+        focusedErrorBorder: outLineBorder(
+          color: Colors.red,
+        ),
+        hintStyle: hintStyle ??
+            Styles.font15Regular.copyWith(
+              color: ColorManager.greyB1,
+            ),
+        hintText: hintText,
+        suffixIcon: suffixIcon,
+        fillColor: backgroundColor ?? Colors.white,
+        filled: true,
+        prefixIcon: prefixIcon,
+      ),
       obscureText: isObscureText ?? false,
-      style: Styles.font15Bold.copyWith(
-        color: Colors.white,
+      style: Styles.font15Regular.copyWith(
+        color: ColorManager.greyB1,
       ),
       validator: (value) {
         return validator(value);

@@ -21,4 +21,8 @@ abstract class Styles {
     fontSize: 16.sp,
     fontWeight: FontWeightHelper.light,
   );
+  static TextStyle font18Bold = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.bold,
+  );
 }

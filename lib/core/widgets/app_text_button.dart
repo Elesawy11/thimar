@@ -21,7 +21,7 @@ class AppTextButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       style: TextButton.styleFrom(
-        backgroundColor: backgroundColor ?? ColorManager.mainGreen,
+        backgroundColor: backgroundColor ?? ColorManager.green4c,
         minimumSize: Size(double.infinity, 52.h),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.r),
