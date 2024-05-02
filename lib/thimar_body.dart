@@ -21,6 +21,7 @@ class ThimarBody extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: S.delegate.supportedLocales,
+        debugShowCheckedModeBanner: false,
         home: const Scaffold(),
       ),
     );
