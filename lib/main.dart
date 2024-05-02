@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'thimar_body.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const Thimar());
 }
 
@@ -10,16 +10,6 @@ class Thimar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ScreenUtilInit(
-      designSize: Size(375, 812),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: Text('Hello'),
-        ),
-      ),
-    );
+    return const ThimarBody();
   }
 }
